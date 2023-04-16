@@ -37,7 +37,8 @@ RUN \
     python3-minimal \
     python3-pip \
     python3-pkg-resources \
-    unrar && \
+    unrar \
+    calibre && \
   echo "**** install calibre-web ****" && \
   if [ -z ${CALIBREWEB_RELEASE+x} ]; then \
     CALIBREWEB_RELEASE=$(curl -sX GET "https://api.github.com/repos/janeczku/calibre-web/releases/latest" \
